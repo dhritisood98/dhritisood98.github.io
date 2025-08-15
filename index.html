@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhriti Sood — Portfolio</title>
+  <meta name="description" content="Resume and portfolio of Dhriti Sood." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="hero">
+      <!-- Optional: put images/headshot.jpg and uncomment next line -->
+      <!-- <img src="images/headshot.jpg" alt="Dhriti Sood" class="avatar" /> -->
+      <div>
+        <h1>Dhriti Sood</h1>
+        <p>Data Analyst · Machine Learning · Data Visualization</p>
+        <p class="links">
+          <a href="mailto:sood.dhriti11@gmail.com">sood.dhriti11@gmail.com</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/dhriti-sood" target="_blank">LinkedIn</a>
+          <span>•</span>
+          <a href="https://github.com/dhritisood98" target="_blank">GitHub</a>
+        </p>
+        <p>
+          <a class="btn" href="resume.pdf" target="_blank" download>Download Résumé</a>
+          <a class="link" href="resume.pdf" target="_blank">View PDF</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section>
+      <h2>About</h2>
+      <p>
+        MS in Business Analytics @ UIC. 4+ years of experience building data products and dashboards.
+        Comfortable with SQL, Python, and Tableau; interested in ML and analytics engineering.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="pill-list">
+        <li>SQL</li><li>Python</li><li>Tableau</li><li>Pandas</li><li>scikit-learn</li>
+        <li>ETL</li><li>Data Modeling</li><li>Power BI</li><li>Excel</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <article class="card">
+        <header>
+          <h3>Data Analyst II — Verizon</h3>
+          <span>Oct 2021 – Jul 2024 · Chennai</span>
+        </header>
+        <ul>
+          <li>Built Tableau + SQL reporting; accelerated decision-making with automated insights.</li>
+          <li>Created analytics pipelines in Python/SQL to streamline monthly reporting.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Programmer Analyst — Cognizant</h3>
+          <span>Jul 2020 – Oct 2021 · Chennai</span>
+        </header>
+        <ul>
+          <li>Developed Power BI dashboards from complex datasets; supported business teams.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <article class="card">
+        <header>
+          <h3>UIC Chatbot (GenAI)</h3>
+          <span><a href="#" target="_blank">GitHub</a></span>
+        </header>
+        <p>GPT-powered FAQ assistant for program info; stack: Python, Flask.</p>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Yelp Sentiment Analysis</h3>
+          <span><a href="#" target="_blank">GitHub</a></span>
+        </header>
+        <p>NLP pipeline with Naïve Bayes & Random Forest; explored 500k+ reviews.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>MS, Business Analytics</strong> — University of Illinois Chicago (2024– )</p>
+      <p><strong>B.Tech, Information Technology</strong> — SRM Institute of Science and Technology</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sood.dhriti11@gmail.com">sood.dhriti11@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> Dhriti Sood</p>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
