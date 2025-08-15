@@ -65,8 +65,71 @@
   .job ul { margin: .5rem 0 0 1.1rem; }
   
   /* ===== Skills ===== */
-  .pill-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
-  .pill-list li { background: #141825; border: 1px solid var(--border); padding: .42rem .65rem; border-radius: 999px; }
+  .skill-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .skill-card {
+    perspective: 1000px;
+  }
+  
+  .skill-card-inner {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .skill-card:hover .skill-card-inner,
+  .skill-card:active .skill-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .skill-card-front, .skill-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .skill-card-front h3 {
+    margin-bottom: .5rem;
+  }
+  
+  .skill-card-front small {
+    margin-top: .5rem;
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .skill-card-back {
+    background: var(--panel);
+    transform: rotateY(180deg);
+    color: var(--text);
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 1rem 1.2rem;
+  }
+  
+  .gradient-blue {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+  }
+  .gradient-purple {
+    background: linear-gradient(135deg, #9b51e0, #6a11cb);
+  }
+  .gradient-orange {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+  }
+  
   
   /* ===== Education ===== */
   .edu p { margin: .25rem 0; }
