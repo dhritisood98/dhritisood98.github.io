@@ -29,7 +29,7 @@
   .nav-links .cta { background: var(--accent); color: #0b0c10; padding: .45rem .8rem; border-radius: 12px; font-weight: 700; }
   
   /* ===== Hero ===== */
-  .hero { padding: 72px 0 24px; }
+  .hero { padding: 72px 0 16px; }
   .hero-text { text-align: center; }
   .name { font-size: clamp(36px, 6vw, 64px); line-height: 1.05; margin: 0 0 6px; font-weight: 800; letter-spacing: .2px; }
   .tagline { font-size: clamp(18px, 2.8vw, 28px); margin: 0 0 8px; font-weight: 700; }
@@ -39,21 +39,45 @@
   .btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); box-shadow: none; }
   .links { color: var(--muted); }
   
+  /* ===== Headlines ===== */
+  .headline { padding: 4px 0 8px; }
+  .headline-list {
+    display: flex; flex-wrap: wrap; gap: .5rem;
+    padding: 0; margin: 0; list-style: none; justify-content: center;
+  }
+  .headline-list li{
+    background:#111522; border:1px solid var(--border); border-radius:999px;
+    padding:.35rem .7rem; color:var(--muted); font-weight:600; font-size:.9rem;
+  }
+  
   /* ===== Sections ===== */
   .section { padding: 28px 0; }
   .section h2 { margin: 0 0 12px; font-size: 1rem; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
   
-  /* (Removed KPI section visually by not including it in HTML) */
-  
   /* ===== Cards / Projects ===== */
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
-  .card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); }
-  .card header { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+  .card {
+    background: linear-gradient(180deg, var(--panel), var(--panel-2));
+    border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  .card * { min-width: 0; }               /* prevents flex children from overflowing */
+  .card header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: .75rem; flex-wrap: wrap;
+  }
   .card h3 { margin: 0; font-size: 1.1rem; flex: 1 1 auto; }
-  .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
-  .card .tags span { background: rgba(167,139,250,.2); color: var(--accent-2); border: 1px solid rgba(167,139,250,.35); padding: .18rem .45rem; border-radius: 999px; font-size: .8rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: .35rem; max-width: 100%; }
+  .card .tags span {
+    background: rgba(167,139,250,.2); color: var(--accent-2);
+    border: 1px solid rgba(167,139,250,.35);
+    padding: .18rem .45rem; border-radius: 999px; font-size: .8rem;
+  }
   .card p { margin: .5rem 0 .75rem; color: var(--text); }
+  .card ul { margin: 0 0 .5rem 1.1rem; }
   .card .link { font-weight: 600; }
+  .card footer { margin-top: auto; }
   
   /* ===== Timeline ===== */
   .timeline { display: grid; gap: 1rem; }
@@ -64,8 +88,7 @@
   
   /* ===== Skills (flip cards) ===== */
   .skill-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.2rem;
   }
   .skill-card { perspective: 1000px; }
