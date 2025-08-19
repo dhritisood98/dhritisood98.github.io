@@ -33,9 +33,10 @@
   <!-- ===== Hero ===== -->
   <header id="top" class="hero container">
     <div class="hero-text">
-      <h1>Data Analyst who ships insights, not just charts.</h1>
+      <h1 class="name">Dhriti Sood</h1>
+      <p class="tagline">Data Analyst who ships insights, not just charts.</p>
       <p class="sub">
-        MS Business Analytics @ UIC • 4+ years experience turning messy data into decisions using
+        MS Business Analytics @ UIC · Turning messy data into decisions with
         <strong>SQL</strong>, <strong>Python</strong>, and <strong>Tableau</strong>.
       </p>
       <div class="cta-row">
@@ -51,102 +52,84 @@
   </header>
 
   <main>
-    <!-- ===== Highlight Metrics ===== -->
-    <section class="metrics container" aria-label="Highlights">
-      <div class="kpi">
-        <div class="num">4+</div>
-        <div class="label">Years Experience</div>
-      </div>
-      <div class="kpi">
-        <div class="num">10x</div>
-        <div class="label">Faster Reporting</div>
-      </div>
-      <div class="kpi">
-        <div class="num">SQL • Py • BI</div>
-        <div class="label">Core Stack</div>
-      </div>
-    </section>
-
     <!-- ===== Projects ===== -->
     <section id="projects" class="section container">
-        <h2>Selected Projects</h2>
-        <div class="cards">
-      
-          <article class="card">
-            <header>
-              <h3>UIC GenAI Chatbot</h3>
-              <span class="tags"><span>Python</span><span>Flask</span><span>RAG</span></span>
-            </header>
-            <p>Built a GPT-powered chatbot to answer UIC program FAQs, improving student support accessibility and response speed.</p>
-            <ul>
-              <li>Designed a retrieval-augmented generation pipeline for precise, context-based answers.</li>
-              <li>Integrated Pinecone vector DB for semantic search and prompt routing.</li>
-              <li>Improved answer accuracy by ~25% over keyword search baseline.</li>
-            </ul>
-            <footer>
-              <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
-            </footer>
-          </article>
-      
-          <article class="card">
-            <header>
-              <h3>Yelp Review Sentiment Analysis</h3>
-              <span class="tags"><span>Python</span><span>NLP</span><span>ML</span></span>
-            </header>
-            <p>Processed and analyzed 500K+ Yelp reviews to extract actionable sentiment insights for restaurants.</p>
-            <ul>
-              <li>Built Naïve Bayes and Random Forest models with tuned hyperparameters.</li>
-              <li>Created an interactive Tableau dashboard for sentiment trends and drivers.</li>
-              <li>Achieved ~87% accuracy and sped up review triage for operators.</li>
-            </ul>
-            <footer>
-              <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
-            </footer>
-          </article>
-      
-          <article class="card">
-            <header>
-              <h3>Operations Reporting Automation</h3>
-              <span class="tags"><span>SQL</span><span>Tableau</span><span>ETL</span></span>
-            </header>
-            <p>Automated monthly operational reports for leadership, reducing manual effort and enhancing decision-making speed.</p>
-            <ul>
-              <li>Parameterised SQL to pull KPIs from live sources; robust data quality checks.</li>
-              <li>Built Tableau exec dashboards with drill-downs for team and region.</li>
-              <li>Cut reporting time from ~5 days to ~12 hours per cycle.</li>
-            </ul>
-            <footer>
-              <a class="link" href="#" target="_blank" rel="noopener">Case Notes</a>
-            </footer>
-          </article>
-      
-          <!-- New: Instacart User Retention -->
-          <article class="card">
-            <header>
-              <h3>Instacart User Retention</h3>
-              <span class="tags"><span>Python</span><span>SQL</span><span>Cohorts</span><span>Churn</span></span>
-            </header>
-            <p>Analyze Instacart user retention using cohort analysis and predictive modeling to uncover behavioral patterns influencing churn.</p>
-            <ul>
-              <li>Built cohort matrices (signup month × week-N activity) and retention curves.</li>
-              <li>Engineered RFM + session features; trained classification models to flag at-risk users.</li>
-              <li>Identified behaviors correlated with churn; suggested lifecycle nudges and reorder prompts.</li>
-              <li><strong>Outcome:</strong> Targeted engagement of high-potential users can raise 30-day retention by up to <strong>20%</strong>.</li>
-            </ul>
-            <footer>
-              <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
-            </footer>
-          </article>
-      
-        </div>
-      </section>
-      
+      <h2>Selected Projects</h2>
+      <div class="cards">
+
+        <!-- Instacart FIRST -->
+        <article class="card">
+          <header>
+            <h3>Instacart User Retention</h3>
+            <span class="tags"><span>Python</span><span>SQL</span><span>Cohorts</span><span>Churn</span></span>
+          </header>
+          <p>Analyze Instacart user retention using cohort analysis and predictive modeling to uncover behavioral patterns influencing churn.</p>
+          <ul>
+            <li>Built cohort matrices (signup month × week-N activity) and retention curves.</li>
+            <li>Engineered RFM + session features; trained classification models to flag at-risk users.</li>
+            <li>Identified behaviors correlated with churn; suggested lifecycle nudges and reorder prompts.</li>
+            <li><strong>Outcome:</strong> Targeted engagement of high-potential users can raise 30-day retention by up to <strong>20%</strong>.</li>
+          </ul>
+          <footer>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+          </footer>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>UIC GenAI Chatbot</h3>
+            <span class="tags"><span>Python</span><span>Flask</span><span>RAG</span></span>
+          </header>
+          <p>Built a GPT-powered chatbot to answer UIC program FAQs, improving student support accessibility and response speed.</p>
+          <ul>
+            <li>Designed a retrieval-augmented generation pipeline for precise, context-based answers.</li>
+            <li>Integrated Pinecone vector DB for semantic search and prompt routing.</li>
+            <li>Improved answer accuracy by ~25% over keyword-search baseline.</li>
+          </ul>
+          <footer>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+          </footer>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Yelp Review Sentiment Analysis</h3>
+            <span class="tags"><span>Python</span><span>NLP</span><span>ML</span></span>
+          </header>
+          <p>Processed and analyzed 500K+ Yelp reviews to extract actionable sentiment insights for restaurants.</p>
+          <ul>
+            <li>Built Naïve Bayes and Random Forest models with tuned hyperparameters.</li>
+            <li>Created an interactive Tableau dashboard for sentiment trends and drivers.</li>
+            <li>Achieved ~87% accuracy and sped up review triage for operators.</li>
+          </ul>
+          <footer>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+          </footer>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Operations Reporting Automation</h3>
+            <span class="tags"><span>SQL</span><span>Tableau</span><span>ETL</span></span>
+          </header>
+          <p>Automated monthly operational reports for leadership, reducing manual effort and enhancing decision-making speed.</p>
+          <ul>
+            <li>Parameterized SQL to pull KPIs from live sources; robust data-quality checks.</li>
+            <li>Built Tableau exec dashboards with drill-downs for team and region.</li>
+            <li>Cut reporting time from ~5 days to ~12 hours per cycle.</li>
+          </ul>
+          <footer>
+            <a class="link" href="#" target="_blank" rel="noopener">Case Notes</a>
+          </footer>
+        </article>
+
+      </div>
+    </section>
 
     <!-- ===== Experience ===== -->
     <section id="experience" class="section container">
       <h2>Experience</h2>
       <div class="timeline">
-
         <article class="job">
           <header>
             <div>
@@ -173,71 +156,69 @@
             <li>Wrote performant SQL queries and optimized data models for reporting.</li>
           </ul>
         </article>
-
       </div>
     </section>
 
-    <!-- ===== Skills ===== -->
+    <!-- ===== Skills (flip cards) ===== -->
     <section id="skills" class="section container">
-        <h2>Skills</h2>
-        <div class="skill-cards">
-          <!-- Card 1 -->
-          <div class="skill-card">
-            <div class="skill-card-inner">
-              <div class="skill-card-front gradient-blue">
-                <h3>Technical</h3>
-                <p>Python • SQL • Oracle • GCP</p>
-                <small>Click / tap to flip</small>
-              </div>
-              <div class="skill-card-back">
-                <ul>
-                  <li>Python: Pandas, NumPy, scikit-learn</li>
-                  <li>SQL: Advanced queries, joins, optimization</li>
-                  <li>Oracle DB: PL/SQL, procedures</li>
-                  <li>GCP: BigQuery, Cloud Functions</li>
-                </ul>
-              </div>
+      <h2>Skills</h2>
+      <div class="skill-cards">
+        <!-- Card 1 -->
+        <div class="skill-card">
+          <div class="skill-card-inner">
+            <div class="skill-card-front gradient-blue">
+              <h3>Technical</h3>
+              <p>Python • SQL • Oracle • GCP</p>
+              <small>Click / tap to flip</small>
             </div>
-          </div>
-      
-          <!-- Card 2 -->
-          <div class="skill-card">
-            <div class="skill-card-inner">
-              <div class="skill-card-front gradient-purple">
-                <h3>Data Engineering</h3>
-                <p>Pipelines • Modeling • ETL</p>
-                <small>Click / tap to flip</small>
-              </div>
-              <div class="skill-card-back">
-                <ul>
-                  <li>Designed ETL workflows with Python & SQL</li>
-                  <li>Data modeling for analytics</li>
-                  <li>Experience with Snowflake, PySpark</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Card 3 -->
-          <div class="skill-card">
-            <div class="skill-card-inner">
-              <div class="skill-card-front gradient-orange">
-                <h3>Project & Management</h3>
-                <p>Stakeholders • Agile • Docs</p>
-                <small>Click / tap to flip</small>
-              </div>
-              <div class="skill-card-back">
-                <ul>
-                  <li>Agile methodology & sprint planning</li>
-                  <li>Client-facing documentation</li>
-                  <li>Cross-team collaboration</li>
-                </ul>
-              </div>
+            <div class="skill-card-back">
+              <ul>
+                <li>Python: Pandas, NumPy, scikit-learn</li>
+                <li>SQL: Advanced queries, joins, optimization</li>
+                <li>Oracle DB: PL/SQL, procedures</li>
+                <li>GCP: BigQuery, Cloud Functions</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      
+
+        <!-- Card 2 -->
+        <div class="skill-card">
+          <div class="skill-card-inner">
+            <div class="skill-card-front gradient-purple">
+              <h3>Data Engineering</h3>
+              <p>Pipelines • Modeling • ETL</p>
+              <small>Click / tap to flip</small>
+            </div>
+            <div class="skill-card-back">
+              <ul>
+                <li>Designed ETL workflows with Python & SQL</li>
+                <li>Data modeling for analytics</li>
+                <li>Experience with Snowflake, PySpark</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="skill-card">
+          <div class="skill-card-inner">
+            <div class="skill-card-front gradient-orange">
+              <h3>Project & Management</h3>
+              <p>Stakeholders • Agile • Docs</p>
+              <small>Click / tap to flip</small>
+            </div>
+            <div class="skill-card-back">
+              <ul>
+                <li>Agile methodology & sprint planning</li>
+                <li>Client-facing documentation</li>
+                <li>Cross-team collaboration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== Education ===== -->
     <section id="education" class="section container">
