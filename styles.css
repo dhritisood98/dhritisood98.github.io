@@ -185,23 +185,37 @@
     margin: 0.75rem 0;
   }
 
-  /* ===== Certifications ===== */
-  .certs p {
-    margin: .3rem 0;
-    white-space: nowrap; /* prevents breaking into multiple lines */
-  }
-  
-  /* Education */
-  .edu p {
-    margin: .25rem 0;
-    line-height: 1.5;
-  }
-  
-  /* Contact */
+  /* Make sure these sections are full-width blocks (stack vertically) */
+#certifications, #education, #contact { display: block; }
+
+  /* Certifications list */
+.certs { list-style: none; padding-left: 0; margin: 0; }
+.certs li {
+  margin: .6rem 0;
+  padding: 12px;
+  border-left: 3px solid var(--accent);
+  background: var(--panel);
+  border-radius: 6px;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  white-space: nowrap;       /* keep on one line */
+  overflow-x: auto;          /* allow horizontal scroll if too long */
+}
+
+/* Education entries each on its own line; don’t wrap */
+.edu p {
+  margin: .6rem 0;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/* Contact lines on a single line too */
 #contact p {
-    margin: .25rem 0;
-    white-space: nowrap;
-  }
+  margin: .4rem 0;
+  white-space: nowrap;
+  overflow-x: auto;
+}
   
   /* ===== Footer ===== */
   .footer { margin-top: 24px; border-top: 1px solid var(--border); background: #0a0c12; }
