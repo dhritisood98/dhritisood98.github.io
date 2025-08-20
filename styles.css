@@ -186,23 +186,22 @@
   }
 
   /* ===== Certifications ===== */
-.certs {
-    list-style: none;
-    padding-left: 0;
-  }
-  .certs li {
-    margin: 0.75rem 0;
-    padding: 12px;
-    border-left: 3px solid var(--accent);
-    background: var(--panel);
-    border-radius: 6px;
-    color: var(--text);
-    box-shadow: var(--shadow);
-  }
-  .certs li strong {
-    color: var(--accent);
+  .certs p {
+    margin: .3rem 0;
+    white-space: nowrap; /* prevents breaking into multiple lines */
   }
   
+  /* Education */
+  .edu p {
+    margin: .25rem 0;
+    line-height: 1.5;
+  }
+  
+  /* Contact */
+#contact p {
+    margin: .25rem 0;
+    white-space: nowrap;
+  }
   
   /* ===== Footer ===== */
   .footer { margin-top: 24px; border-top: 1px solid var(--border); background: #0a0c12; }
